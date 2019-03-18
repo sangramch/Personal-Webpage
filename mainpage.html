@@ -4,31 +4,29 @@
   <head>
     <title>The first webpage</title>
     <link rel="stylesheet" type="text/css" href="mainpage.css">
+    <script>
+
+      function loadhtm(){
+        document.getElementById("content").innerHTML='<object type="text/html" data="projects.html"></object>';
+      }
+    </script>
+    
+
   </head>
 
   <body>
-    <div id="banner">
-      <div id="name">
+    <div id="main">
+      <div class="sidebar">
+        <a onclick="loadprojfile()">Projects</a>
+        <a href="#">Certifications</a>
+        <a href="#">Contacts</a>
+        <a href="#">About</a>
+      </div>
+
+      <div id="content">
+          <object type="text/html" data="frontpage.html"></object>
       </div>
     </div>
-    <button onclick="increase()">Click</button>
-    <script>
-        function increase(){
-          var element=document.getElementById("name");
-          var width=0;
-          var id=setInterval(frame,5);
-  
-          function frame()
-          {
-            if(width>=100){
-              clearInterval(id);
-            }
-            else{
-              width++;
-              element.style.width=width + '%';
-            }
-          }
-        }
-      </script>
+
   </body>
 </html>
