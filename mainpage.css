@@ -1,0 +1,15 @@
+html,body{
+    height:100%;}
+
+#banner{
+    background-color: antiquewhite;
+    height:30%;
+    width:100%;
+    font-size:4vmin;
+    position:relative;}
+
+#name{
+    background-color:red;
+    width:10%;
+    height:100%;
+    position:absolute;}
