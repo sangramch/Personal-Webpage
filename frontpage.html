@@ -2,13 +2,100 @@
 <html>
     <head>
         <title>Front Page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
         <style>
-            body{
-                ;
+            .col-lg-3,.col-sm-4{
+                border:50px;
+                height: 300px;
+            }
+            .col-lg-3>p{
+                text-align: justify;
+            }
+
+            .thumbnail>p{
+                position: absolute;
+                bottom: 10px;
+                left: 13px;
+            }
+            .thumbnail>img{
+                height: 200px;
+            }
+            .thumbnail>h4{
+                position:absolute;
+                bottom: 60px;
+                left: 13px;
+                right: 13px;
+                color:gray;
+            }
+            .thumbnail{
+                position:relative;
+                height: 580px;
             }
         </style>
+    
     </head>
     <body>
-        Hello!
+        <div class="container">
+
+
+        <div class="col-lg-3 col-sm-4">
+            <div class="thumbnail">
+                <img src="resources/playstore.jpeg">
+                <div class="caption">
+                    <h2>Play Store Rating Predictor</h2>
+                    <p>
+                    A Machine Learning project using classical techniques to predict Android Play Store Ratings from a variety of data.
+                    </p>
+                </div>
+                <h4>Python, Scikit-Learn, Numpy, Pandas</h4>
+                <p><a href="https://github.com/sangramch/Rating-Predictor" class="btn btn-primary" role="button">Github</a></p>
+            </div>
+        </div>  
+
+        <div class="col-lg-3 col-sm-4">
+            <div class="thumbnail">
+                <img src="resources/univadmission.jpg">
+                <div class="caption">
+                    <h2>University Admissions Predictor</h2>
+                    <p>
+                    A Machine Learning project using classical techniques to predict University admission chances from TOEFL score, GRE score and other data.
+                    </p>
+                </div>
+                <h4>Python, Scikit-Learn, Numpy, Pandas</h4>
+                <p><a href="https://github.com/sangramch/Admissions-Predictor" class="btn btn-primary" role="button">Github</a></p>
+            </div>
+        </div> 
+
+        <div class="col-lg-3 col-sm-4">
+            <div class="thumbnail">
+                <img src="resources/radioactive.gif">
+                <div class="caption">
+                    <h2>RadioActive Games</h2>
+                    <p>
+                    A simple program with 4 simple games with an attractive and fluid GUI.
+                    </p>
+                </div>
+                <h4>Python, Tkinter</h4>
+                <p><a href="https://github.com/sangramch/Radioactive-Games" class="btn btn-primary" role="button">Github</a></p>
+            </div>
+        </div>
+        
+        <div class="col-lg-3 col-sm-4">
+            <div class="thumbnail">
+                <img src="resources/website.webp">
+                <div class="caption">
+                    <h2>Showcasing Website</h2>
+                    <p>
+                    A website designed to showcase the projects built by me.
+                    </p>
+                </div>
+                <h4>HTML, CSS, JavaScript, Bootstrap</h4>
+                <p><a href="https://github.com/sangramch/Rating-Predictor" class="btn btn-primary" role="button">Github</a></p>
+            </div>
+        </div>
+
+
+        </div>
     </body>
 </html>
