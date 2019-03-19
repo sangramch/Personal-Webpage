@@ -2,8 +2,9 @@
 <html>
 
   <head>
-    <title>The first webpage</title>
-    <link rel="stylesheet" type="text/css" href="mainpage.css">
+    <title>Sangramjit Chakraborty</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/mainpage.css">
     <script>
 
       function loadhtm(pagename){
@@ -16,15 +17,15 @@
   </head>
 
   <body>
-    <div id="main">
-      <div class="sidebar">
-        <a onclick="loadhtm('frontpage.html')">Projects</a>
-        <a href="#">Certifications</a>
-        <a href="#">Contacts</a>
-        <a href="#">About</a>
+    <div id="main" class="container" style="padding:0;">
+      <div class="sidebar col-lg-2">
+        <a onclick="loadhtm('frontpage.html')" class="col-lg-12 btn btn-default">Projects</a>
+        <a href="#" class="col-lg-12 btn btn-default">Certifications</a>
+        <a href="#" class="col-lg-12 btn btn-default">Contacts</a>
+        <a href="#" class="col-lg-12 btn btn-default">About</a>
       </div>
 
-      <div id="content">
+      <div id="content" class="col-lg-10">
           <!--<object type="text/html" data="frontpage.html" style="width:100%;height:100%;"></object>-->
       </div>
     </div>
