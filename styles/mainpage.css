@@ -20,17 +20,19 @@ html,body{
 .sidebar .btn{
     font-size: 2vmax;
 }
-.sidebar a{
+.sidebar>a{
     margin-bottom:20px;
     display:block;
     color: #818181;
     text-decoration:none;
 }
+.sidebar .bottom{
+    font-size:0.8vmax
+}
 
 .sidebar>a:hover{
     color: #815181;
 }
-
 #content{
     margin-left:20%;
     width: 80%;
