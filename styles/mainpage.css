@@ -10,27 +10,26 @@ html,body{
     overflow:hidden;
 }
 
-.sidebar{
+.topbar{
     background-color: #191919;
-    height:100%;
-    position:fixed;
-    padding-top: 20px;
+    height:5%;
+    padding-top: 7px;
+
 }
 
-.sidebar .btn{
-    font-size: 2vmax;
+.topbar .btn{
+    font-size: 0.8vmax;
 }
-.sidebar>a{
+.topbar>a{
     margin-bottom:20px;
-    display:block;
     color: #818181;
     text-decoration:none;
 }
-.sidebar .bottom{
+.topbar .bottom{
     font-size:0.8vmax
 }
 
-.sidebar>a:hover{
+.topbar>a:hover{
     color: #815181;
 }
 #content{
