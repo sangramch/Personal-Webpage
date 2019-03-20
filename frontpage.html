@@ -5,8 +5,13 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         
         <style>
+            body{
+                background-color:lightslategray;
+            }
             .container{
                 padding-top:5%;
+                background-color: lightsteelblue;
+                box-shadow: 0px 0px 80px 80px lightsteelblue;
             }
             .col-lg-3>p{
                 text-align: justify;
@@ -30,17 +35,47 @@
             .thumbnail{
                 position:relative;
                 height: 580px;
+                border: 1px solid grey;
+            }
+
+            .tooltipclass{
+                background-color:lightgray;
+                color:black;
+                border: 1px solid grey;
+                margin:2%;
+                padding:3%;
+                border-radius:5px;
+                width:100%;
+                display:none;
+                position:absolute;
+                z-index: 1;
             }
         </style>
+        <script>
+            function tooltipshow(name){
+                document.getElementById(name).style.display='block';
+            }
+            function tooltiphide(name){
+                document.getElementById(name).style.display='none';
+            }
+        </script>
     
     </head>
+
     <body>
+
         <div class="container">
         <div class="row">
 
         <!--1st-->
         <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="thumbnail">
+            <div onmouseover="tooltipshow('songgenre')" onmouseout="tooltiphide('songgenre')" class="thumbnail">
+
+                <div class="tooltipclass" id='songgenre'>
+                        Built Using:<br>
+                        Python, Keras, Google Colaboratory
+                </div>
+
                 <img src="resources/songgenre.jpg">
                 <div class="caption">
                     <h2>Song Genre Detector</h2>
@@ -54,8 +89,15 @@
         </div>
 
         <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="thumbnail">
+            <div onmouseover="tooltipshow('devnagri')" onmouseout="tooltiphide('devnagri')" class="thumbnail">
+
+                <div class="tooltipclass" id='devnagri'>
+                    Built Using:<br>
+                    Python, Keras, Google Colaboratory
+                </div>
+
                 <img src="resources/devnagri.jpeg">
+
                 <div class="caption">
                     <h2>Handwritten Devanagri Alphabet Classifier</h2>
                     <p>
@@ -69,7 +111,13 @@
 
         <!--2nd-->
         <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="thumbnail">
+            <div onmouseover="tooltipshow('playstore')" onmouseout="tooltiphide('playstore')" class="thumbnail">
+
+                <div class="tooltipclass" id='playstore'>
+                    Built Using:<br>
+                    Python, Numpy, Pandas, SkLearn
+                </div>
+
                 <img src="resources/playstore.jpeg">
                 <div class="caption">
                     <h2>Play Store Rating Predictor</h2>
@@ -84,7 +132,13 @@
 
         <!--3rd-->
         <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="thumbnail">
+            <div onmouseover="tooltipshow('univadmission')" onmouseout="tooltiphide('univadmission')" class="thumbnail">
+
+                <div class="tooltipclass" id='univadmission'>
+                    Built Using:<br>
+                    Python, Numpy, Pandas, SkLearn
+               </div>
+
                 <img src="resources/univadmission.jpg">
                 <div class="caption">
                     <h2>University Admissions Predictor</h2>
@@ -99,7 +153,13 @@
 
         <!--4th-->
         <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="thumbnail">
+            <div onmouseover="tooltipshow('website')" onmouseout="tooltiphide('website')" class="thumbnail">
+
+                <div class="tooltipclass" id='website'>
+                    Built Using:<br>
+                    HTML, CSS, JavaScript, JQuery, BootStrap
+                </div>
+
                 <img src="resources/website.webp">
                 <div class="caption">
                     <h2>Showcasing Website</h2>
@@ -114,7 +174,13 @@
 
         <!--5th-->
         <div class="col-lg-3 col-md-4 col-sm-6">
-            <div class="thumbnail">
+            <div onmouseover="tooltipshow('radio')" onmouseout="tooltiphide('radio')" class="thumbnail">
+
+                <div class="tooltipclass" id='radio'>
+                    Built Using:<br>
+                    Python, Tkinter
+                </div>
+
                 <img src="resources/radioactive.gif">
                 <div class="caption">
                     <h2>RadioActive Games</h2>
