@@ -17,15 +17,17 @@ html,body{
 }
 .topbar>a{
     margin-bottom:20px;
-    color: #818181;
+    color: #eeeeee;
     text-decoration:none;
+    float:right;
 }
 .topbar .bottom{
     font-size:0.8vmax
 }
 
 .topbar>a:hover{
-    color: #815181;
+    background-color: lightgray;
+    color: #242424;
 }
 
 .column>#content{
