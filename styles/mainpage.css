@@ -19,7 +19,12 @@ html,body{
     margin-bottom:20px;
     color: #eeeeee;
     text-decoration:none;
+    font-size: 0.9vmax;
+    font-weight: bolder;
     float:right;
+}
+.topbar>input{
+    display:block;
 }
 .topbar .bottom{
     font-size:0.8vmax
@@ -35,6 +40,12 @@ html,body{
     overflow:auto;
 }
 
+.vl{
+    border-left: 2px solid gray;
+    width:0px;
+    height: 90%;
+    float:right;
+}
 
 .intro{
     font-size:0.8vmax;
