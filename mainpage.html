@@ -11,12 +11,10 @@
       function resetcolor(){
 
         document.getElementById("about").style.backgroundColor="#191919";
-        document.getElementById("contacts").style.backgroundColor="#191919";
         document.getElementById("certifications").style.backgroundColor="#191919";
         document.getElementById("projects").style.backgroundColor="#191919";
 
         document.getElementById("about").style.color="#eeeeee";
-        document.getElementById("contacts").style.color="#eeeeee";
         document.getElementById("certifications").style.color="#eeeeee";
         document.getElementById("projects").style.color="#eeeeee";
       }
@@ -30,6 +28,21 @@
         document.getElementById(callerid).style.color='#242424';
         return false;
       }
+
+      function togglesdbr(){
+        var x=document.getElementById("sdbr");
+        var y=document.getElementById("hamburger");
+        if(x.style.display==="none")
+        {
+          x.style.display="block";
+          y.style.marginLeft="20%";
+        }
+        else
+        {
+          x.style.display="none";
+          y.style.marginLeft="2.5%";
+        }
+      }
     </script>
     
 
@@ -37,37 +50,34 @@
 
   <body>
     <div id="main" class="container" style="padding:0; width:100%; height:100%;">
-
-      <div class="sidebar col-lg-2 col-sm-4" style="height:100%; background-color:lightgray; padding-top: 5%;">
-        <img src="resources/self.jpg" class="col-lg-12 col-sm-12" style="margin-bottom: 5%"></img>
-
-        <h3 style="margin-top: 5%; padding-bottom: 2%; color:darkslategrey">Sangramjit Chakraborty</h3>
-        <p style="text-align: justify;">
-          Welcome to my website.<br>I am a student of Dr. B.C Roy Engineering College, Durgapur.
-          I built this website to showcase all my projects and professional certifications.<br>I hope you find what you are looking for.
-          And if not, feel free to contact me. All my contact info can be found on the contact tab above.<br>
-          Thank you for visiting.
-        </p>
-
-        <span><a href="#" id="homepage" class="bottom btn btn-danger col-lg-5 col-sm-5">Home Page</a></span>
-        <span class="col-lg-2 col-sm-2"></span>
-        <span><a href='#' id="feedback" class="bottom btn btn-danger col-lg-5 col-sm-5">Feedback</a></span>
-      </div>
-
-      <div class="column col-lg-10 col-sm-8" style="height:100%; padding:0">
+      <div class="column col-lg-12 col-sm-12" style="height:100%; padding:0; position:absolute;">
 
         <div class="topbar col-lg-12">
           <a onclick="loadhtm('frontpage.html','about')" id="about" class="col-lg-2 btn">About</a>
-          <a onclick="loadhtm('frontpage.html','contacts')" id="contacts" class="col-lg-2 btn">Contacts</a>
           <a onclick="loadhtm('frontpage.html','certifications')" id="certifications" class="col-lg-2 btn">Certifications</a>
           <a onclick="loadhtm('frontpage.html','projects')" id="projects" class="col-lg-2 btn">Projects</a>
+          <a onclick="togglesdbr()" id="hamburger" class="col-lg-1 btn btn-warning" style="margin-top:0.1%; float:left; margin-left:2.5%"><img src="resources/hamburger.png" class="col-lg-4"></img></a>
         </div>
-
         <div id="content" class="col-lg-12"></div>
 
-      </div>
+        <div id="sdbr" class="sidebar col-lg-2 col-sm-4" style="height:100%; background-color:lightgray; padding-top: 5%; position:absolute; display:none;">
+          <img src="resources/self.jpg" class="col-lg-12 col-sm-12" style="margin-bottom: 5%"></img>
 
+          <h3 style="margin-top: 5%; color:darkslategrey; padding-left:5%; font-weight: bold;">Sangramjit Chakraborty</h3>
+          <p class="intro">Welcome to my website.</p>
+          <p class="intro">I am a student of Dr. B.C Roy Engineering College, Durgapur.
+            I built this website to showcase all my projects and professional certifications.</p>
+          <p class="intro">I hope you find what you are looking for. And if not, feel free to contact me. All my contact information can be found below.</p>
+          <p class="intro">Thank you for visiting.</p>
+
+          <span><a href="#" id="homepage" class="bottom btn btn-danger col-lg-5 col-sm-5">Home Page</a></span>
+          <span class="col-lg-2 col-sm-2"></span>
+          <span><a href='#' id="feedback" class="bottom btn btn-danger col-lg-5 col-sm-5">Feedback</a></span>
+        </div>
+      </div>
     </div>
+
+    <button onclick="randfun()">Click</button>
 
   </body>
 </html>
