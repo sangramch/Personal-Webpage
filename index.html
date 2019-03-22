@@ -2,119 +2,108 @@
 <html>
 
   <head>
+
+    <meta charset='utf-8'>
+    <meta name='viewport' content="width=device-width, initial-scale=1.0">
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.8.0/js/solid.js" integrity="sha384-prcFDC6iTvvWsx2iSZtbDdeMVWWOtxcQXXagr9uPHwi42uae31Y3Q17eehHuC0JL" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.0/js/fontawesome.js" integrity="sha384-TAztyRuTlqgZ97tz982rMo44MRC58wyCC0pqKZY3cKWJNkK00qMd3DhQ7R25jpCe" crossorigin="anonymous"></script>
+
     <title>Sangramjit Chakraborty</title>
     <link rel="icon" type="image/ico" href="resources/header.png">
-    <link rel="stylesheet" href="styles/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles/mainpage.css">
-
-    <script>
-
-      function resetcolor(){
-
-        document.getElementById("about").style.backgroundColor="#191919";
-        document.getElementById("certifications").style.backgroundColor="#191919";
-        document.getElementById("projects").style.backgroundColor="#191919";
-
-        document.getElementById("about").style.color="#eeeeee";
-        document.getElementById("certifications").style.color="#eeeeee";
-        document.getElementById("projects").style.color="#eeeeee";
-      }
-
-      function loadhtm(pagename,callerid){
-        document.getElementById("content").innerHTML='<object type="text/html" data="'+pagename+'" style="width:100%;height:100%;"></object>';
-
-        resetcolor();
-
-        document.getElementById(callerid).style.backgroundColor='lightgray';
-        document.getElementById(callerid).style.color='#242424';
-        return false;
-      }
-
-      function toggle_sdbr(){
-        var x=document.getElementById("sdbr");
-        var y=document.getElementById("hamburger");
-        var z=document.getElementById("inimage");
-
-        var leftmargin=parseInt((x.style.left).slice(0,-1));
-
-        if(leftmargin<0)
-        {
-          var id=setInterval(frame,5);
-
-          function frame()
-          {
-            if(leftmargin>=0)
-            {clearInterval(id);}
-            else{
-                leftmargin++;
-                x.style.left=leftmargin+'%';
-                y.style.left=leftmargin+17+'%';
-            }
-
-          }
-          z.style.cssFloat="right";
-          z.src="resources/reversed_hamburger.png"
-        }
-
-        else if(leftmargin>=0)
-        {
-          var id=setInterval(frame,5);
-
-          function frame()
-          {
-            if(leftmargin<=-17)
-            {clearInterval(id);}
-            else{
-                leftmargin=leftmargin-1;
-                x.style.left=leftmargin+'%';
-                y.style.left=leftmargin+17+'%';
-            }
-          }
-          z.style.cssFloat="left";
-          z.src="resources/hamburger.png"
-        }
-      }
-    </script>
-    
 
   </head>
 
+
   <body>
-    <div id="main" class="container" style="padding:0; width:100%; height:100%;">
-      <div class="column col-lg-12 col-sm-12" style="height:100%; padding:0; position:absolute;">
 
-        <div class="topbar col-lg-12 col-sm-12">
-          <a onclick="loadhtm('frontpage.html','about')" id="about" class="col-lg-2 btn">About</a>
-          <div class="vl"></div>
-          <a onclick="loadhtm('frontpage.html','certifications')" id="certifications" class="col-lg-2 btn">Certifications</a>
-          <div class="vl"></div>
-          <a onclick="loadhtm('frontpage.html','projects')" id="projects" class="col-lg-2 btn">Projects</a>
+    <div class="wrapper">
 
-          <div onclick="toggle_sdbr()" id="hamburger" class="col-lg-1 col sm-1 btn btn-warning" style="float:left; height:90%;">
-            <img id="inimage" src='resources/hamburger.png' style="height:100%; float:left;">
-            <span style="font-weight: bold; font-size:0.8vmax; ">Info</span>
+
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <h3>Sangramjit Chakraborty</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+          <p>Social</p>
+
+          <li>
+            <a href="#">LinkedIn</a>
+          </li>
+            
+          <li>
+            <a href="#">Twitter</a>
+          </li>
+
+          <li id="mailbox">
+            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Email</a>
+            <ul class="collapse list-unstyled" id="pageSubmenu">
+              <li>
+                <a href="mailto:chsangram99@gmail.com">chsangram99@gmail.com</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+      </nav>
+
+
+      <div id="content">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+          <div class="container-fluid">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+              <i class="fas fa-align-left"></i>
+              <span>Info</span>
+            </button>
+
+            <button type="button" id="dropdown" class="btn btn-dark d-inline-block d-lg-none ml-auto" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-align-justify"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Certifications</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div id="content" class="col-lg-12 col-sm-12">
-            <object type="text/html" data="home.html" style="width:100%;height:100%;"></object>
-        </div>
 
-        <div id="sdbr" class="sidebar col-lg-2 col-sm-4" style="height:100%; background-color:lavender; padding-top: 3%; position:absolute; left:-17%;">
-          <img src="resources/self.jpg" class="col-lg-12 col-sm-12" style="margin-bottom: 5%"></img>
+        </nav>
 
-          <h3 style="margin-top: 5%; color:darkslategrey; padding-left:5%; font-weight: bold;">Sangramjit Chakraborty</h3>
-          <p class="intro">Welcome to my website.</p>
-          <p class="intro">I am a student of Dr. B.C Roy Engineering College, Durgapur.
-            I built this website to showcase all my projects and professional certifications.</p>
-          <p class="intro">I hope you find what you are looking for. And if not, feel free to contact me. All my contact information can be found below.</p>
-          <p class="intro">Thank you for visiting.</p>
+        <div class="container-fluid">
+          <object data="projects.html" style="width:100%; height:85vh;">
 
-          <span><a onclick="loadhtm('home.html','')" id="homepage" class="bottom btn btn-danger col-lg-5 col-sm-5">Home Page</a></span>
-          <span class="col-lg-2 col-sm-2"></span>
-          <span><a onclick="window.alert('Sorry for the inconvenience. This function is not ready yet. You can provide any feedback through the contact links in the sidebar.')" id="feedback" class="bottom btn btn-danger col-lg-5 col-sm-5">Feedback</a></span>
+          </object>
         </div>
+      
+
       </div>
+
+
     </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#sidebarCollapse").on('click',function(){
+          $("#sidebar").toggleClass('active');
+        });
+      });
+    </script>
 
   </body>
 </html>

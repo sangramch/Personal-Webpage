@@ -1,0 +1,33 @@
+.container{
+    margin-top:30px;
+    margin-bottom:50px;
+}
+.row{
+    height:auto;
+}
+.card{
+    display:inline-block;
+    height:500px;
+}
+
+.card-body{
+    padding:20px;
+}
+
+.card-img-top{
+    height:200px;
+}
+.card .btn{
+    position:absolute;
+    bottom:20px;
+    transition: 0.3s;
+    opacity:0;
+    transform:translateY(-20px);
+    visibility:hidden;
+}
+.card:hover .btn{
+    display:block;
+    transform:translateY(0);
+    opacity:1;
+    visibility:visible;
+}
