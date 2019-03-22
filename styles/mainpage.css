@@ -1,3 +1,26 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.7em;
+}
+
+.navbar {
+  padding: 15px 10px;
+  background: #fff;
+  border: none;
+  border-radius: 40px;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
 .wrapper{
   display:flex;
   width:100%;
@@ -12,6 +35,10 @@
   color:#fff;
 }
 
+.sidebar-header{
+  padding: 20px;
+  background: #6d7fcc;
+}
 #content {
   width: 100%;
   padding: 20px;
@@ -26,16 +53,27 @@
   border-bottom:1px solid #47748b;
 }
 
-#sidebar p{
+#sidebar ul p{
   padding:10px;
   font-size: 1.1em;
 }
 
-#sidebar ul.components a{
+#sidebar ul a{
   padding:10px;
   font-size:1.1em;
   display:block;
   color:#fff;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+#sidebar ul a:hover{
+  background-color:#fff;
+  color:#7386D5;
+}
+
+#sidebar ul li.active{
+  background: #6d7fcc;
 }
 
 .dropdown-toggle::after {
@@ -46,6 +84,36 @@
   transform: translateY(-50%);
 }
 
+#sidebar ul ul a{
+  padding-left:20px;
+  font-size:0.9em;
+}
+
+.nav-item{
+  font-size: 1.3em;
+  border-radius: 40px;
+  margin-right:10px;
+  transition:0.3s;
+}
+
+.nav-item.active .nav-link.whiten:hover{
+  color:#fafafa;
+}
+
+#content nav button{
+  border-radius:40px;
+}
+.nav-item:hover{
+  background-color:black;
+}
+.nav-item{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+#sidebarCollapse{
+  background-color: #7386D5;
+}
 @media (max-width:786px){
   #sidebar{
     margin-left:-250px;
