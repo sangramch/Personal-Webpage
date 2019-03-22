@@ -55,9 +55,18 @@ body {
 .card-footer{
     border:0;
     background-color: inherit;
-    font-size:1.1em;
+    font-size:1.2em;
     color:grey;
     position:absolute;
     bottom:50px;
     z-index: 1;
+}
+
+@media(max-width:786px){
+    .card .btn{
+        display:block;
+        transform:translateY(0);
+        opacity:1;
+        visibility:visible;
+    }
 }

@@ -3,6 +3,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   background: #fafafa;
+  overflow:hidden;
 }
 
 p {
@@ -17,7 +18,6 @@ p {
   background: #fff;
   border: none;
   border-radius: 40px;
-  margin-bottom: 40px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -113,6 +113,10 @@ p {
 
 #sidebarCollapse{
   background-color: #7386D5;
+}
+
+.buttons li button{
+  margin-bottom:5px;
 }
 @media (max-width:786px){
   #sidebar{
