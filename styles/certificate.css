@@ -1,0 +1,55 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+.container{
+    margin-top:30px;
+    margin-bottom:50px;
+}
+
+.row{
+    margin-bottom:15px;
+}
+
+.card .card-date{
+    color: #818181
+}
+
+.card{
+    transition:0.3s;
+    border-radius: 10px;
+}
+
+.card .btn{
+    transition:0.3s;
+    transform:translateY(-50px);
+    opacity:0;
+    border-radius: 40px;
+}
+
+.card:hover .btn{
+    transform: translateY(0);
+    opacity:1;
+}
+
+.card-title{
+    color:darkslategrey;
+}
+
+.card .btn.nocert{
+    visibility: hidden;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+}
+
+@media(max-width:786px){
+    .card .btn{
+        transform:translateY(0);
+        opacity:1;
+    }
+}

@@ -117,15 +117,17 @@ p {
   background-color: #7386D5;
 }
 
-.buttons div li .sidebarbtn{
+button.sidebarbtn{
   margin-bottom:5px;
   width: 100%;
   border-radius: 40px;
   background-color: white;
-  border:white 5px;
   color:#0a0a0a
 }
-
+button.sidebarbtn:hover{
+  background-color: darkorchid;
+  color:#fafafa
+}
 
 @media (max-width:786px){
   #sidebar{

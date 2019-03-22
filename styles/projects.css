@@ -16,6 +16,7 @@ body {
     display:inline-block;
     height:600px;
     border-radius:10px;
+    transition:0.3s;
 }
 
 .card-body{
@@ -60,6 +61,9 @@ body {
     position:absolute;
     bottom:50px;
     z-index: 1;
+}
+.card:hover{
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
 }
 
 @media(max-width:786px){
