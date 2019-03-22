@@ -122,15 +122,10 @@ p {
   width: 100%;
   border-radius: 40px;
   background-color: white;
-  border:white;
+  border:white 5px;
   color:#0a0a0a
 }
 
-.buttons div li .sidebarbtn:hover{
-  color:white;
-  background-color:darkorchid;
-  border:darkorchid;
-}
 
 @media (max-width:786px){
   #sidebar{
