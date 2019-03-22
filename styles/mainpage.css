@@ -55,7 +55,8 @@ p {
 
 #sidebar ul p{
   padding:10px;
-  font-size: 1.1em;
+  font-size: 1.2em;
+  font-weight: 500;
 }
 
 #sidebar ul a{
@@ -109,6 +110,7 @@ p {
 .nav-item{
   padding-left:10px;
   padding-right:10px;
+  cursor: pointer;
 }
 
 #sidebarCollapse{
@@ -117,7 +119,12 @@ p {
 
 .buttons li button{
   margin-bottom:5px;
+  width: 100%;
+  border-radius: 40px;
+  background-color: white;
+  color:#0a0a0a
 }
+
 @media (max-width:786px){
   #sidebar{
     margin-left:-250px;
