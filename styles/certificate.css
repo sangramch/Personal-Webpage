@@ -47,6 +47,11 @@ body{
     box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
 }
 
+.btn-primary{
+    background-color: #7386d5;
+    border:#7386d5;
+}
+
 @media(max-width:786px){
     .card .btn{
         transform:translateY(0);
