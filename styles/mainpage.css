@@ -117,7 +117,7 @@ p {
   background-color: #7386D5;
 }
 
-.buttons div li button{
+.buttons div li .sidebarbtn{
   margin-bottom:5px;
   width: 100%;
   border-radius: 40px;
