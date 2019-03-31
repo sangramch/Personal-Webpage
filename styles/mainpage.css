@@ -135,6 +135,13 @@ button.sidebarbtn:hover{
   background-color: #5865a1;
 }
 
+.social_logo{
+  width:15%;
+  margin-right:5%;
+  background-color:white;
+  border-radius: 8px;
+}
+
 @media (max-width:786px){
   #sidebar{
     margin-left:-250px;
